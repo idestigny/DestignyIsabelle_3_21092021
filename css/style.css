@@ -1,0 +1,36 @@
+/*# sourceMappingURL=style.css.map */
+
+html,
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marg-logo {
+    margin-top: 2rem;
+}
+
+.bordureSearch {
+    max-width: 100%;
+    border: none;
+    background-color: #E5E8E8;
+    margin-top: 0.5rem;
+}
