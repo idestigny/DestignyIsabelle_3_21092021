@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .search__text {
   border: 0px;
   background-color: transparent;
@@ -54,4 +55,4 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

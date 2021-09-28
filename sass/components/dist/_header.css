@@ -1,0 +1,28 @@
+.logo {
+  box-shadow: 0px 7px 19px 9px rgba(214, 214, 214, 0.87);
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.search {
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  max-width: 100%;
+  border: none;
+  background-color: #E5E8E8;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__text {
+  border: 0px;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  width: 140px;
+}
+
+/*# sourceMappingURL=_header.css.map */
