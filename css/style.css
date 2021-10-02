@@ -31,6 +31,9 @@
   justify-content: center;
   align-items: center;
 }
+.flex-centre button {
+  color: red;
+}
 
 .flex-around {
   display: flex;
@@ -52,6 +55,23 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
+}
+
+.btn {
+  width: 200px;
+  height: 80px;
+  background-color: #9356DC;
+  color: white;
+  border: 1px solid #FF79DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
