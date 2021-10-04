@@ -2,19 +2,5 @@
 @import "./components/header";
 @import "./components/flex";
 @import "./base/global";
-.btn {
-    width: 200px;
-    height: 80px;
-    background-color: $colour-primary;
-    color: white;
-    border: 1px solid $colour-secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    &:hover {
-        background-color: white;
-        color: $colour-primary;
-    }
-}
+@import "./components/btn";
+@import "./components/fonct";
