@@ -1,0 +1,29 @@
+.lists{
+    background-color: #f3f3f3;
+}
+
+.size-restaurant{
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.cube-restaurant{
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.cube-restaurant:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img-restaurant1{
+    background-image: url("./img/restaurants/restaurant1/jay-wennington-N_Y88TWmGwa-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+}
