@@ -101,13 +101,6 @@ body {
   box-shadow: 5px 5px 7px -3px rgba(199, 197, 198, 0.8);
 }
 
-.choice:hover {
-  color: black;
-  background-color: #9356DC;
-  opacity: 10%;
-  box-shadow: 5px 5px 7px -3px rgba(109, 108, 109, 0.8);
-}
-
 .icon-list {
   color: #9F9D9D;
   height: 50px;
@@ -115,6 +108,10 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.icon-list:hover i {
+  color: #9356DC;
 }
 
 .lists {
