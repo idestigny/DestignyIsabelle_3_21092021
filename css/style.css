@@ -144,4 +144,23 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
+.mention {
+  background-color: #393939;
+  height: 400px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.logo-foot {
+  color: white;
+  padding-left: 20px;
+}
+
+.icon-foot {
+  display: flex;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
