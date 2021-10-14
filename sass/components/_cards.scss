@@ -4,27 +4,50 @@
     width: 100%;
 }
 
-.size-restaurant{
-    height: 80px;
-    padding-left: 20px;
-    border-radius: 10px;
+.restaurants
+{
+    display:flex;
+    flex-direction: column;
+
+    background-color: #f3f3f3;
+    width: 100%;
+    padding:20px;
+
+    &__title{
+        width:100%;
+    }
 }
 
-.cube-restaurant{
-    height: 500px;
-    width: auto;
-    border-radius: 20px;
-}
-/*
-.cube-restaurant:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-*/
-.img-restaurant1{
-    background-image: url("./img/restaurants/restaurant1/jay-wennington-N_Y88TWmGwa-unsplash.jpg");
-    width: 35%;
-    height: 80px;
-    padding-left: 20px;
-    border-radius: 15px 15px 0 0;
+.card {
+
+    width:350px;
+    margin:0 1em 1.5em 1em;
+    border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    box-shadow:0px 8px 8px darken(#f6f6f6,3);
+    background-color: white;
+
+    &__img{
+        width:100%;
+        object-fit:cover;
+        border-top-left-radius:1em;
+        border-top-right-radius:1em;
+    }
+
+    &__title{
+        font-weight: 900;
+        font-size:1.3em;
+        margin-top:0.8em;
+        margin-bottom: 0.2em;
+        margin-left:1em;
+
+    }
+
+    &__location{
+        font-weight: 100;
+        font-size:1.3em;
+        margin-bottom: 1em;
+        margin-left:1em;
+    }
 }
