@@ -63,9 +63,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0.5rem;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 5px 5px 7px -3px rgba(199, 197, 198, 0.8);
+  transition: transform 300ms;
 }
 
 .btn:hover {
@@ -122,6 +124,11 @@ body {
   color: white;
   background-color: #9356DC;
 }
+@media (max-width: 800px) {
+  .ol {
+    flex-direction: column;
+  }
+}
 
 .bulle {
   position: relative;
@@ -155,12 +162,16 @@ body {
 .new {
   position: absolute;
   padding: 6px 10px;
+  right: 10px;
+  top: 5px;
+  border-radius: 3px;
   background-color: #99E2D0;
   color: #008766;
 }
 
 .card {
   width: 400px;
+  position: relative;
   margin: 0 1em 1.5em 1em;
   border-radius: 1em;
   color: black;
@@ -204,5 +215,9 @@ body {
 .footer__list {
   list-style-type: none;
 }
+
+/*
+@import "./components/heart";
+*/
 
 /*# sourceMappingURL=style.css.map */

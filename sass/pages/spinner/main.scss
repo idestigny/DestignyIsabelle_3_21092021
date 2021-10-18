@@ -1,0 +1,45 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: "shrikhand";
+    font-size: 40px;
+    color: #9356DC;
+    text-align: center;
+}
+
+.spinner{
+    background-color: #F8D6F3;
+    height: 500px;
+    line-height: 500px;
+
+    &__loader{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+
+    &__loader-quart{
+        border-radius: 50px;
+        border: 6px solid #FF79DA;
+    }
+
+&__loader-quart:after{
+        content:'';
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        bottom: -6px;
+        right: -6px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top: 6px solid white;
+        animation: spin 1s linear 0s infinite;
+    }
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}

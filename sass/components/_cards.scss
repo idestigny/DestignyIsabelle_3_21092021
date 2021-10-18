@@ -15,12 +15,16 @@
 .new{
     position: absolute;
     padding: 6px 10px;
+    right: 10px;
+    top: 5px;
+    border-radius: 3px;
     background-color: #99E2D0;
     color: #008766;
 }
 
 .card {
     width: 400px;
+    position: relative;
     margin: 0 1em 1.5em 1em;
     border-radius: 1em;
     color: black;

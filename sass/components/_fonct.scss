@@ -42,6 +42,9 @@
     justify-content: flex-start;
     color: white;
     background-color: #9356DC;
+    @media (max-width: 800px){
+        flex-direction: column;
+    }
 }
 
 .bulle{
