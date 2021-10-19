@@ -1,16 +1,25 @@
-.body{
+.section_loader{
     margin: 0;
     padding: 0;
-    font-family: "shrikhand";
     font-size: 40px;
     color: #9356DC;
     text-align: center;
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    width:100%;
+    animation: show_loader 3s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
 }
 
 .spinner{
-    background-color: #F8D6F3;
-    height: 500px;
-    line-height: 500px;
+    background-color: #F8D6F3;    
+    font-family: "Shrikhand";
 
     &__loader{
         width: 50px;
@@ -42,4 +51,9 @@
 @keyframes spin{
     0%{ transform: rotate(0deg);}
     100%{ transform: rotate(360deg);}
+    
+}
+
+@keyframes show_loader{
+    0%{ opacity: 1;   }
 }

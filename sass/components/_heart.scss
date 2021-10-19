@@ -4,5 +4,81 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}*/
+}
+
+:root{
+    --black: black;
+    --pink: #FF79DA;
+    --violet: #9356DC;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.icon{
+    fill: transparent;
+    stroke: var(--black);
+    stroke-width: 20;
+    cursor: pointer;
+    position: relative;
+}
+
+.svg{
+    overflow: visibility;
+    width: 10rem;
+}
+
+.path{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+    transform-origin: center;
+}
+
+.heart-background{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    stroke: none;
+}
+
+.heart-main:hover path{
+    animation: stroke-animation 2s ease-in-out forwards;
+}
+
+.heart-main:hover ~ .heart-background path{
+    animation: fade-animation 2s ease-in-out forwards;
+}
+
+@keyframes stroke-animation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    30%{
+        stroke-dashoffset: 1550;
+    }
+    60%{
+        stroke-dashoffset: 3100;
+        fill: transparent;
+    }
+    70%{
+        fill: var(--violet);
+    }
+    100%{
+        stroke-dashoffset: 3100;
+        fill: var(--violet);
+    }
+}
+*/
 
