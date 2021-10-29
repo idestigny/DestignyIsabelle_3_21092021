@@ -1,13 +1,13 @@
 @import "./utils/variables";
+@import "./base/entry";
+@import "./base/global";
+@import "./base/menu";
+@import "./base/breadcrumb";
 @import "./components/header";
 @import "./components/flex";
-@import "./base/global";
 @import "./components/btn";
 @import "./components/fonct";
 @import "./components/cards";
 @import "./components/footer";
 @import "./components/loader";
-@import "./components/menu1";
-/*
 @import "./components/heart";
-*/

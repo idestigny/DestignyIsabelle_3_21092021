@@ -6,60 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fbf6e72ade.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <title>Restaurant1</title>
 </head>
 
 <body>
-    <div class="header flex-centre">
-        <i class="fas fa-arrow-left"></i>
-        <img src="./img/restaurants/restaurant1/ohmyfood.png" alt="logo Ohmyfood" width="160px" height="30px" />
-    </div>
-    <div>
-        <h1>La palette du goût</h1>
-        <i class="far fa-heart"></i>
-        <i class="far fa-heart"></i>
-    </div>
-Entrées
-Fricassée d'escargot
-Au piment d'Espelette 
-25€
-
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
-35€
-
-Oeuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€
-
-
-Plats
-Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
-
-Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais
-35€
-
-Filet de turbot
-Aux agrumes
-44€
-        
-Desserts
-Paris-Brest
-Revisité
-18€
-
-Macaron au chocolat d'exception 
-Et glace à la vanille de Madagascar
-22€
-
-Mousse au chocolat 
-Au piment d'Espelette et à la truffe noire
-23€
-
+    <header class="header">
+        <div class="retour">
+            <a href="../../index.html">
+        <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="logo flex-centre"><img src="./ohmyfood.png" alt="logo Ohmyfood" width="160px" height="30px" /></div>
+    </header>
+    <main>
+        <section class="breadcrumb">
+            <img class="breadcrumb__img" src="jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+            <div class="breadcrumb__title">
+                <h1>La palette du goût</h1>                    
+                <div class="Container_coeur">
+                    <i class="fas fa-heart coeurplein"></i>
+                    <i class="far fa-heart coeurvide"></i>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h2 class="menu__title">ENTRÉES</h2>            
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Fricassée d'escargot </h3>
+                    <h4>Au piment d'Espelette</h4>
+                </div>
+                <div class="entry__price">
+                    25€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Foie gras de canard mi-cuit</h3>
+                    <h4>Et ses copeaux de truffe noire</h4>
+                </div>
+                <div class="entry__price">
+                    35€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Oeuf au plat</h3>
+                    <h4>Assaisonné à la truffe sur lit de caviar</h4>
+                </div>
+                <div class="entry__price">
+                    20€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>        
+            <h2 class="menu__title">PLATS</h2>
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Filet de boeuf aux herbes</h3>
+                    <h4>Accompagné de sa ribambelle de légumes</h4>
+                </div>
+                <div class="entry__price">
+                    40€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Parmentier de queue de boeuf</h3>
+                    <h4>À la truffe noire sur sa purée de panais</h4>
+                </div>
+                <div class="entry__price">
+                    35€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>
+            <div class="entry">
+                <div class="entry__title">
+                    <h3>Filet de turbot</h3>
+                    <h4>Aux agrumes</h4>
+                </div>
+                <div class="entry__price">
+                    44€
+                </div>
+                <div class="entry__animation">
+                </div>
+            </div>            
+            <section class="menu">
+                <h2 class="menu__title">DESSERTS</h2>
+                <div class="entry">
+                    <div class="entry__title">
+                        <h3>Paris-Brest</h3>
+                        <h4>Revisité</h4>
+                    </div>
+                    <div class="entry__price">
+                        18€
+                    </div>
+                    <div class="entry__animation">
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="entry__title">
+                        <h3>Macaron au chocolat d'exception</h3>
+                        <h4>Et glace à la vanille de Madagascar</h4>
+                    </div>
+                    <div class="entry__price">
+                        22€
+                    </div>
+                    <div class="entry__animation">
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="entry__title">
+                        <h3>Mousse au chocolat</h3>
+                        <h4>Au piment d'Espelette et à la truffe noire</h4>
+                    </div>
+                    <div class="entry__price">
+                        23€
+                    </div>
+                    <div class="entry__animation">
+                    </div>
+                </div>
+                <div class="reserve flex-centre">
+                <button class="btn">Commander</button>
+                </div>
+            </div>
+            <footer class="footer">
+                <span class="footer__title">&nbsp;ohmyfood</span>
+                <ul class="footer__list">
+                    <li><i class="fas fa-utensils"></i>&nbsp;&nbsp;&nbsp;Proposer un restaurant</li>
+                    <li><i class="fas fa-hands-helping"></i>&nbsp;&nbsp;&nbsp;Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li><a href="mailto::Contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </footer>
+        </section>
+    </main>    
 </body>
 
 </html>

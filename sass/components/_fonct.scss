@@ -1,11 +1,25 @@
-.list{
-    padding-left: 30px;
-    margin-top: 40px;
-    font-weight: bold;
+.fonct{
+
+    padding:20px;
+    &__title{
+
+        padding-left: 20px;
+
+        font-weight: bold;
+    }
+    &___list{
+        list-style-type: disc;
+        justify-content: flex-start;
+        color: white;
+        background-color: #9356DC;
+        @media (max-width: 800px){
+            flex-direction: column;
+        }
+    }
 }
 
 
-.fonct{
+.flelement{
     width: 300px;
     height: 60px;
     color: black;
@@ -23,42 +37,38 @@
     &:hover{
         background-color: #FAE9FD;
     }
-}
 
-.icone{
-    height: 50px;
-    width: 50px;
-    color: #9F9D9D;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    &:hover{
-    color: #9356DC;
+    &__icone{
+        height: 50px;
+        width: 50px;
+        color: #9F9D9D;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    
+        &:hover{
+        color: #9356DC;
+        }
     }
-}
-.ol{
-    list-style-type: disc;
-    justify-content: flex-start;
-    color: white;
-    background-color: #9356DC;
-    @media (max-width: 800px){
+
+    &__number{
+        position: relative;
+        top: 0; right: 3rem; left: -2rem;
+        background-color: #9356DC;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+        padding-left: 0;
     }
 }
 
-.bulle{
-    position: relative;
-    top: 0; right: 3rem; left: -2rem;
-    background-color: #9356DC;
-    color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0;
-}
+
+
+
+
 
