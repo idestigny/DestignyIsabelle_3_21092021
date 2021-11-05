@@ -1,7 +1,22 @@
 .heart{
-    font-size: 2rem;
     position: absolute;
-    right: 2rem;
+    font-size: 1.5rem;
+    right: 1rem;
     top:75%;
-}
+    transform: translateY(-50%);
+    border: 1px solid red;
+    
+    .fas{
+        color: transparent;
+        background-image: linear-gradient($colour-secondary, $colour-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 200ms ease-in-out;
+        
+        &:hover{
+        opacity: 1;
+        }
+    }
 
+}

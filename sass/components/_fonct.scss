@@ -1,5 +1,4 @@
 .fonct{
-
     padding:20px;
     &__title{
 
@@ -11,7 +10,7 @@
         list-style-type: disc;
         justify-content: flex-start;
         color: white;
-        background-color: #9356DC;
+        background-color: $colour-primary;
         @media (max-width: 800px){
             flex-direction: column;
         }
@@ -47,14 +46,14 @@
         cursor: pointer;
     
         &:hover{
-        color: #9356DC;
+        color: $colour-primary;
         }
     }
 
     &__number{
         position: relative;
         top: 0; right: 3rem; left: -2rem;
-        background-color: #9356DC;
+        background-color: $colour-primary;
         color: white;
         width: 25px;
         height: 25px;

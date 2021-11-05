@@ -2,19 +2,36 @@
     margin: 0;
     padding: 0;
     font-size: 40px;
-    color: #9356DC;
+    color: $colour-primary;
     text-align: center;
-    z-index: 1000;
-    position: absolute;
-    top: 0px;
+    z-index: 0;
     width:100%;
     animation: show_loader 3s;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
+    background-color: #F8D6F3;
+}
 
+.container_page{
+    animation :showPage 0.1s 2.5s ease-in-out both;
+    position:absolute;
+    top:0px;
+    z-index:100;
+}
+
+@keyframes showPage {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .spinner{
@@ -31,7 +48,7 @@
 
     &__loader-quart{
         border-radius: 50px;
-        border: 6px solid #FF79DA;
+        border: 6px solid $colour-secondary;
     }
 
 &__loader-quart:after{
