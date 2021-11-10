@@ -1,27 +1,72 @@
 .entry{
-    height: 80px;
+    height: 85px;
     width: 90%;
     background-color: white;
     border-radius: 20px;
     margin: 10px 15px;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    white-space:nowrap;
     padding-left:10px;
     box-shadow: 6px 6px 4px #e7e7e7;
-    position: relative;
+    overflow: hidden;
 
     &__title{
+        align-items: center;
         flex-direction: column;
         width:100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        >h3, >p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
 
     &__price{
         font-weight: bold;
         text-align: end;
-        margin-right:15px;
+        margin-left: auto;
+        margin-right: 25px;
+        margin-top: 60px;
         font-size:16px;
-        position: absolute;
-        right: 4%;
-        transform: translateY(50%);
-        top: 43%;
+        transition: margin-right 0.5s;
+    }
+
+
+    &__check{
+        height: 5.3rem;
+        width: 6rem;
+        font-size: 22px;
+        display: grid;
+        place-items: center;
+        color: white;
+        background-color: $colour-tertiary;
+        border-radius:0 20px 20px 0;
+        margin-right: -5.8rem;
+        right: 0;
+
+        transition: margin-right 0.5s;
+        cursor: pointer;    
+    }
+
+    &:hover{
+        .entry__check{
+            margin-right: 0;
+        }
+        .rotate-center > i {
+            animation: rotate-center 0.6s ease-in-out both;
+        }
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

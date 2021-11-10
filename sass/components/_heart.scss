@@ -1,11 +1,18 @@
 .heart{
-    position: absolute;
+    position:absolute;
     font-size: 1.5rem;
     right: 1rem;
-    top:75%;
-    transform: translateY(-50%);
-    border: 1px solid red;
+    top:60%;
+    margin-right: 60px;
     
+    &__one {
+        position:absolute;
+    }
+
+    &__two {
+        position:absolute;
+    }
+
     .fas{
         color: transparent;
         background-image: linear-gradient($colour-secondary, $colour-primary);
@@ -16,6 +23,7 @@
         
         &:hover{
         opacity: 1;
+        transform: scale(1.09);
         }
     }
 
