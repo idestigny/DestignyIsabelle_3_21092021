@@ -1,18 +1,32 @@
 .fonct{
     padding:20px;
     &__title{
-
         padding-left: 20px;
-
         font-weight: bold;
     }
-    &___list{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-inline-start: 0;
+        padding: 0 1em;
         list-style-type: disc;
-        justify-content: flex-start;
         color: white;
-        background-color: $colour-primary;
-        @media (max-width: 800px){
-            flex-direction: column;
+
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .fonct{
+        &__list{
+            flex-direction: row;
+            justify-content: space-between;
+            width:80%;
+            margin:auto;
+            flex-wrap: wrap;
         }
     }
 }
@@ -52,7 +66,9 @@
 
     &__number{
         position: relative;
-        top: 0; right: 3rem; left: -2rem;
+        top: 0;
+        right: 3rem;
+        left: -2rem;
         background-color: $colour-primary;
         color: white;
         width: 25px;
@@ -65,7 +81,6 @@
         padding-left: 0;
     }
 }
-
 
 
 

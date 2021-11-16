@@ -1,12 +1,22 @@
 .restaurants
 {
-    display:flex;
-    
+    display:flex;    
     flex-wrap:wrap;
     background-color: #f3f3f3;
     width: 100%;
     padding:20px;
     justify-content:center;
+
+    &__grid {
+        display: grid;
+        @media (min-width: 700px) {
+        grid-template-columns: 1fr 1fr;
+        }
+
+/*        @media (max-width: 600px) {
+          grid-template-columns: 1fr;
+        }*/
+    }
 
     &__title{
         width:100%;
